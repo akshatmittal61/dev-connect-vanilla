@@ -23,3 +23,79 @@
 		@include set-background($black-color);
 	}
 }
+.dark-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.x {
+	&-large {
+		font-size: 4rem;
+		line-height: 1.2;
+		margin-bottom: 1rem;
+	}
+}
+.large {
+	font-size: 3rem;
+}
+.lead {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+.btn {
+	display: inline-block;
+	background-color: $white-color;
+	color: $black-color;
+	padding: 0.4rem 1.3rem;
+	margin: 0 0.25rem;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-right: 5rem;
+	outline: none;
+	border-radius: 5px;
+	&-primary {
+		@include set-background($primary-color);
+		&:hover {
+			background-color: lighten($primary-color, 5%);
+		}
+	}
+	&-dark {
+		@include set-background($dark-color);
+		&:hover {
+			background-color: lighten($dark-color, 5%);
+		}
+	}
+	&-light {
+		@include set-background($light-color);
+		&:hover {
+			background-color: lighten($light-color, 5%);
+		}
+	}
+	&-success {
+		@include set-background($success-color);
+		&:hover {
+			background-color: lighten($success-color, 5%);
+		}
+	}
+	&-success {
+		@include set-background($success-color);
+		&:hover {
+			background-color: lighten($success-color, 5%);
+		}
+	}
+	&-danger {
+		@include set-background($danger-color);
+		&:hover {
+			background-color: lighten($danger-color, 5%);
+		}
+	}
+	&:hover {
+		background-color: lighten($dark-color, 20%);
+		color: $white-color;
+	}
+}
