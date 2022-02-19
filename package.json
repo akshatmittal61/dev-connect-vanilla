@@ -1,0 +1,13 @@
+{
+  "name": "dev-connect-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "live-server",
+    "sass": "sass sass/style.scss style.css -w"
+  },
+  "keywords": [],
+  "author": "Akshat Mittal",
+  "license": "MIT"
+}
