@@ -400,6 +400,15 @@
   color: #fff;
 }
 
+table th,
+table td {
+  padding: 1rem;
+  text-align: left;
+}
+table th {
+  background-color: #03a9f4;
+}
+
 .form-group {
   margin: 1.25rem 0;
 }
