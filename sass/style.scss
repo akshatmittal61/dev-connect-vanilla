@@ -91,7 +91,7 @@ img {
 	}
 }
 
-.profile{
+.profile {
 	display: grid;
 	grid-template-columns: 2fr 4fr 3fr;
 	grid-gap: 2rem;
@@ -99,10 +99,84 @@ img {
 	padding: 1rem;
 	line-height: 1.8;
 	margin: 0.5rem 0;
-	li{
+	li {
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+	}
+}
+.profile {
+	&-grid {
+		display: grid;
+		grid-template-areas:
+			"top top"
+			"about about"
+			"exp edu"
+			"github github";
+		grid-gap: 1rem;
+	}
+	&-top {
+		grid-area: top;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		img {
+			width: 250px;
+			height: 250px;
+		}
+		.icons a {
+			color: $light-color;
+			font-size: 1.5rem;
+			margin: 0.1rem 0.35rem;
+			&:hover {
+				color: $dark-color;
+			}
+		}
+	}
+	&-about {
+		grid-area: about;
+		text-align: center;
+		.skills {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	&-exp {
+		grid-area: exp;
+	}
+	&-edu {
+		grid-area: edu;
+	}
+	&-exp,
+	&-edu {
+		& > div:not(:last-child) {
+			margin-bottom: 1rem;
+			padding-bottom: 1rem;
+			border-bottom: 1px solid #ccc;
+		}
+		p {
+			margin: 0.5rem 0;
+		}
+	}
+	&-github {
+		grid-area: github;
+	}
+	&-repo {
+		display: flex;
+		& > div {
+			&:first-child {
+				flex: 7;
+				flex-basis: 70%;
+			}
+			&:last-child {
+				flex: 3;
+				flex-basis: 30%;
+			}
+		}
 	}
 }
 
