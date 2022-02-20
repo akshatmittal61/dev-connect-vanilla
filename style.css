@@ -91,9 +91,140 @@
   --green: #34a853;
 }
 
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.mx-2 {
+  margin: 0 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.mx-3 {
+  margin: 0 3rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.px-3 {
+  padding: 0 3rem;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.mx-4 {
+  margin: 0 4rem;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.px-4 {
+  padding: 0 4rem;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.mx-5 {
+  margin: 0 5rem;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+.px-5 {
+  padding: 0 5rem;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  margin: 4rem 0;
+}
+
+.text-primary {
+  color: #17a2b8;
+}
+
 .bg-primary {
-  background-color: #4285f4;
-  color: #333;
+  background-color: #17a2b8;
+  color: #fff;
 }
 .bg-light {
   background-color: #f4f4f4;
@@ -105,11 +236,11 @@
   color: #fff;
 }
 .bg-success {
-  background-color: #34a853;
+  background-color: #28a745;
   color: #fff;
 }
 .bg-danger {
-  background-color: #ea4335;
+  background-color: #dc3545;
   color: #333;
 }
 .bg-white {
@@ -144,13 +275,16 @@
 .lead {
   font-size: 1.5rem;
   margin: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .btn {
   display: inline-block;
   background-color: #f0f0f0;
   color: #121212;
-  padding: 0.4rem 1.3rem;
+  padding: 0.6rem 1.3rem;
   margin: 0 0.25rem;
   border: none;
   cursor: pointer;
@@ -159,11 +293,11 @@
   border-radius: 5px;
 }
 .btn-primary {
-  background-color: #4285f4;
-  color: #333;
+  background-color: #17a2b8;
+  color: #fff;
 }
 .btn-primary:hover {
-  background-color: #5a95f5;
+  background-color: #1ab6cf;
 }
 .btn-dark {
   background-color: #343a40;
@@ -180,29 +314,78 @@
   background-color: white;
 }
 .btn-success {
-  background-color: #34a853;
+  background-color: #28a745;
   color: #fff;
 }
 .btn-success:hover {
-  background-color: #3abb5d;
+  background-color: #2dbc4e;
 }
 .btn-success {
-  background-color: #34a853;
+  background-color: #28a745;
   color: #fff;
 }
 .btn-success:hover {
-  background-color: #3abb5d;
+  background-color: #2dbc4e;
 }
 .btn-danger {
-  background-color: #ea4335;
+  background-color: #dc3545;
   color: #333;
 }
 .btn-danger:hover {
-  background-color: #ec584c;
+  background-color: #e04b59;
 }
 .btn:hover {
   background-color: #626d78;
   color: #f0f0f0;
+}
+
+.form-group {
+  margin: 1.25rem 0;
+}
+.form-text {
+  display: block;
+  margin: 0.35rem;
+  color: #333333;
+}
+.form input[type=text],
+.form input[type=email],
+.form input[type=password],
+.form input[type=date],
+.form input[type=text],
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.45rem;
+  font-size: 1.25rem;
+  border: 1px solid #c3c3c3;
+  outline: none;
+}
+.form input[type=text]:hover,
+.form input[type=email]:hover,
+.form input[type=password]:hover,
+.form input[type=date]:hover,
+.form input[type=text]:hover,
+.form select:hover,
+.form textarea:hover {
+  border: 1px solid #c3c3c3;
+  outline: none;
+}
+.form input[type=text]:active, .form input[type=text]:focus,
+.form input[type=email]:active,
+.form input[type=email]:focus,
+.form input[type=password]:active,
+.form input[type=password]:focus,
+.form input[type=date]:active,
+.form input[type=date]:focus,
+.form input[type=text]:active,
+.form input[type=text]:focus,
+.form select:active,
+.form select:focus,
+.form textarea:active,
+.form textarea:focus {
+  border: 1px solid #c3c3c3;
+  outline: 2px solid #c3c3c3;
 }
 
 body {
@@ -214,7 +397,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #17a2b8;
   text-decoration: none;
 }
 
@@ -238,7 +421,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  border-bottom: 1px solid #4285f4;
+  border-bottom: 1px solid #17a2b8;
   opacity: 0.9;
 }
 .navbar ul {
@@ -258,7 +441,7 @@ img {
   margin: 0 0.25rem;
 }
 .navbar a:hover {
-  color: #4285f4;
+  color: #17a2b8;
 }
 
 .landing {

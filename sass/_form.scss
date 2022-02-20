@@ -1,0 +1,33 @@
+.form {
+	&-group {
+		margin: 1.25rem 0;
+	}
+	&-text {
+		display: block;
+		margin: 0.35rem;
+		color: $tcolor-100;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	input[type="date"],
+	input[type="text"],
+	select,
+	textarea {
+		display: block;
+		width: 100%;
+		padding: 0.45rem;
+		font-size: 1.25rem;
+		border: 1px solid $bgcolor-700;
+		outline: none;
+		&:hover {
+			border: 1px solid $bgcolor-700;
+			outline: none;
+		}
+		&:active,
+		&:focus {
+			border: 1px solid $bgcolor-700;
+			outline: 2px solid $bgcolor-700;
+		}
+	}
+}
