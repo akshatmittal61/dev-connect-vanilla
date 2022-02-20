@@ -212,10 +212,9 @@
 }
 
 .container {
-  margin: auto;
+  margin: 5rem auto;
   overflow: hidden;
   padding: 0 2rem;
-  margin: 4rem 0;
 }
 
 .text-primary {
@@ -241,7 +240,7 @@
 }
 .bg-danger {
   background-color: #dc3545;
-  color: #333;
+  color: #fff;
 }
 .bg-white {
   background-color: #f0f0f0;
@@ -329,7 +328,7 @@
 }
 .btn-danger {
   background-color: #dc3545;
-  color: #333;
+  color: #fff;
 }
 .btn-danger:hover {
   background-color: #e04b59;
@@ -337,6 +336,30 @@
 .btn:hover {
   background-color: #626d78;
   color: #f0f0f0;
+}
+
+.alert {
+  padding: 0.8rem;
+  margin: 1rem;
+  opacity: 0.9;
+  background: #f4f4f4;
+  color: #121212;
+}
+.alert-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+.alert-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+.alert-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+.alert-success {
+  background-color: #28a745;
+  color: #fff;
 }
 
 .form-group {

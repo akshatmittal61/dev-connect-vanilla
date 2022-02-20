@@ -1,8 +1,8 @@
 .container {
-	margin: auto;
+	margin: 5rem auto;
 	overflow: hidden;
 	padding: 0 2rem;
-	margin: 4rem 0;
+	// margin: 4rem 0;
 }
 .text {
 	&-primary {
@@ -110,5 +110,24 @@
 	&:hover {
 		background-color: lighten($dark-color, 20%);
 		color: $white-color;
+	}
+}
+.alert {
+	padding: 0.8rem;
+	margin: 1rem;
+	opacity: 0.9;
+	background: $light-color;
+	color: $tcolor;
+	&-primary {
+		@include set-background($primary-color);
+	}
+	&-dark {
+		@include set-background($dark-color);
+	}
+	&-danger {
+		@include set-background($danger-color);
+	}
+	&-success {
+		@include set-background($success-color);
 	}
 }

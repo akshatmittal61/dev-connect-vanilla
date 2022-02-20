@@ -88,7 +88,7 @@ $white-color: #f0f0f0;
 $black-color: #121212;
 
 @function set-text-color($color) {
-	@if (lightness($color) >50) {
+	@if (lightness($color) >60) {
 		@return #333;
 	} @else {
 		@return #fff;
