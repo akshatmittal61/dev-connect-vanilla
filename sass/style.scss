@@ -91,8 +91,23 @@ img {
 	}
 }
 
+.profile{
+	display: grid;
+	grid-template-columns: 2fr 4fr 3fr;
+	grid-gap: 2rem;
+	align-items: center;
+	padding: 1rem;
+	line-height: 1.8;
+	margin: 0.5rem 0;
+	li{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
+
 .material-icons {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	user-select: none;
