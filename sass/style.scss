@@ -75,6 +75,19 @@ img {
 		flex-flow: column;
 		text-align: center;
 	}
+	.buttons {
+		width: 25%;
+		margin: 2rem 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.button {
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }
 
 .material-icons {
