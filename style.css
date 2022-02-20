@@ -644,6 +644,24 @@ img {
   flex-basis: 30%;
 }
 
+.post {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+.post-form-header {
+  padding: 0.5rem;
+}
+.post > div:first-child {
+  text-align: center;
+}
+.post > div img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
 .material-icons {
   display: inline-flex;
   justify-content: center;
